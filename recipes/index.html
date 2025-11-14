@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>전체 레시피 | 조코의 장-나물-밥</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/includes.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/includes.js" defer></script>
   </head>
-  <body>
-    <div data-include="/partials/header.html"></div>
+  <body data-root-path="..">
+    <div data-include="../partials/header.html" data-root-path=".."></div>
     <main id="main-content">
       <section class="section" aria-labelledby="recipes-heading">
         <div>
@@ -24,21 +24,21 @@
           <h2 class="section-title" id="category-shortcut">카테고리 바로가기</h2>
           <p class="section-lead">원하는 재료와 조리법을 빠르게 확인할 수 있도록 모았습니다.</p>
         </div>
-        <div class="grid cards-3">
+        <div class="category-grid">
           <article class="card">
             <h3>장 레시피</h3>
             <p>발효 장을 활용한 찌개, 양념과 소스 레시피.</p>
-            <a href="/recipes/jang/index.html">장 카테고리 이동 →</a>
+            <a href="jang/index.html">장 카테고리 이동 →</a>
           </article>
           <article class="card">
             <h3>나물 레시피</h3>
             <p>신선한 나물 재료로 즐기는 건강한 반찬.</p>
-            <a href="/recipes/namul/index.html">나물 카테고리 이동 →</a>
+            <a href="namul/index.html">나물 카테고리 이동 →</a>
           </article>
           <article class="card">
             <h3>밥 레시피</h3>
             <p>든든하고 응용 가능한 밥 한 그릇 메뉴.</p>
-            <a href="/recipes/rice/index.html">밥 카테고리 이동 →</a>
+            <a href="rice/index.html">밥 카테고리 이동 →</a>
           </article>
         </div>
       </section>
@@ -48,13 +48,13 @@
           <h2 class="section-title" id="jang-recipes">장 (Jang)</h2>
           <p class="section-lead">발효 장의 깊은 맛을 살린 찌개와 양념 레시피를 확인하세요.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card recipe-card">
-            <h3><a href="/recipes/jang/doenjang-jjigae.html">된장찌개</a></h3>
+            <h3><a href="jang/doenjang-jjigae.html">된장찌개</a></h3>
             <p>구수한 된장과 두부, 채소가 어우러진 대표 한식 찌개.</p>
           </article>
           <article class="card recipe-card">
-            <h3><a href="/recipes/jang/ssamjang.html">쌈장</a></h3>
+            <h3><a href="jang/ssamjang.html">쌈장</a></h3>
             <p>신선한 쌈채소와 어울리는 감칠맛 나는 비빔 장.</p>
           </article>
         </div>
@@ -65,13 +65,13 @@
           <h2 class="section-title" id="namul-recipes">나물 (Namul)</h2>
           <p class="section-lead">계절 나물의 향을 살린 반찬 레시피로 식탁을 채워보세요.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card recipe-card">
-            <h3><a href="/recipes/namul/spinach-namul.html">시금치나물</a></h3>
+            <h3><a href="namul/spinach-namul.html">시금치나물</a></h3>
             <p>간단하게 즐기는 대표 데침 나물.</p>
           </article>
           <article class="card recipe-card">
-            <h3><a href="/recipes/namul/bean-sprout-namul.html">콩나물무침</a></h3>
+            <h3><a href="namul/bean-sprout-namul.html">콩나물무침</a></h3>
             <p>아삭하고 담백한 기본 반찬.</p>
           </article>
         </div>
@@ -82,13 +82,13 @@
           <h2 class="section-title" id="rice-recipes">밥 (Rice)</h2>
           <p class="section-lead">다양한 토핑과 양념으로 완성하는 든든한 밥 요리를 소개합니다.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card recipe-card">
-            <h3><a href="/recipes/rice/bibimbap.html">비빔밥</a></h3>
+            <h3><a href="rice/bibimbap.html">비빔밥</a></h3>
             <p>다양한 나물과 고추장 양념이 조화로운 대표 밥 요리.</p>
           </article>
           <article class="card recipe-card">
-            <h3><a href="/recipes/rice/kimchi-fried-rice.html">김치볶음밥</a></h3>
+            <h3><a href="rice/kimchi-fried-rice.html">김치볶음밥</a></h3>
             <p>김치와 밥, 간단한 재료로 완성하는 빠른 한 끼.</p>
           </article>
         </div>
@@ -100,9 +100,9 @@
           각 레시피 페이지에서는 비건 및 할랄 식단을 위한 대체재 정보를 별도의 박스로 제공하고 있습니다. 장류는 인증 제품을 선택하고,
           육수는 채수나 표고버섯 육수로 바꿔보세요.
         </p>
-        <a class="button tertiary" href="/guides/vegan-halal.html">대체재 가이드 바로가기</a>
+        <a class="button tertiary" href="../guides/vegan-halal.html">대체재 가이드 바로가기</a>
       </aside>
     </main>
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="../partials/footer.html" data-root-path=".."></div>
   </body>
 </html>

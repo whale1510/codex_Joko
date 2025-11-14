@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>한국 식재료 안내 | 조코의 장-나물-밥</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/includes.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/includes.js" defer></script>
   </head>
-  <body>
-    <div data-include="/partials/header.html"></div>
+  <body data-root-path="..">
+    <div data-include="../partials/header.html" data-root-path=".."></div>
     <main id="main-content">
       <section class="section" aria-labelledby="ingredients-heading">
         <div>
@@ -25,7 +25,7 @@
           <h2 class="section-title" id="ingredients-jang">장 &amp; 발효 식품</h2>
           <p class="section-lead">발효 장은 시간과 정성이 만들어내는 감칠맛의 핵심입니다.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card">
             <h3>된장</h3>
             <p>메주를 발효해 만드는 장으로 깊은 감칠맛과 구수한 향이 특징입니다. 냉장 보관하며 공기와의 접촉을 줄여 산화를 방지하세요.</p>
@@ -46,7 +46,7 @@
           <h2 class="section-title" id="ingredients-namul">나물 &amp; 채소</h2>
           <p class="section-lead">제철 나물은 신선한 향과 식감이 중요합니다.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card">
             <h3>시금치</h3>
             <p>봄철이 제철인 잎채소로 비타민과 철분이 풍부합니다. 데친 뒤 찬물에 헹궈 색을 유지하고, 물기를 꼭 짜서 사용하세요.</p>
@@ -67,7 +67,7 @@
           <h2 class="section-title" id="ingredients-grains">밥 &amp; 곡물</h2>
           <p class="section-lead">곡물 조합과 보관법을 익히면 밥맛이 확 달라집니다.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card">
             <h3>백미 &amp; 현미</h3>
             <p>백미는 부드러운 식감, 현미는 식이섬유와 영양이 풍부합니다. 취향에 따라 혼합해 밥을 지어보세요.</p>
@@ -86,9 +86,9 @@
       <aside class="section aside-panel" aria-labelledby="ingredients-alt">
         <h2 id="ingredients-alt">대체재 &amp; 쇼핑 팁</h2>
         <p>비건이나 할랄 인증 제품은 제품 라벨을 꼭 확인하고, 냉동 나물은 사용 전 충분히 해동해 물기를 제거하세요. 해외 거주자는 아시안 마켓이나 온라인 샵에서 ‘Korean style’ 표기를 확인하면 실패 확률이 줄어듭니다.</p>
-        <a class="button tertiary" href="/guides/vegan-halal.html">대체재 가이드 보기</a>
+        <a class="button tertiary" href="vegan-halal.html">대체재 가이드 보기</a>
       </aside>
     </main>
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="../partials/footer.html" data-root-path=".."></div>
   </body>
 </html>

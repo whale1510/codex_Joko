@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>프로젝트 소개 | 조코의 장-나물-밥</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/includes.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/includes.js" defer></script>
   </head>
-  <body>
-    <div data-include="/partials/header.html"></div>
+  <body data-root-path=".">
+    <div data-include="partials/header.html" data-root-path="."></div>
     <main id="main-content">
       <section class="section" aria-labelledby="about-heading">
         <div>
@@ -23,7 +23,7 @@
         </p>
       </section>
 
-      <section class="section layout-two-column" aria-labelledby="goals-heading">
+      <section class="section content-two-column" aria-labelledby="goals-heading">
         <section class="recipe-section">
           <h2 id="goals-heading">프로젝트 목표</h2>
           <ul>
@@ -41,7 +41,7 @@
         </section>
       </section>
 
-      <section class="section layout-two-column" aria-labelledby="team-heading">
+      <section class="section content-two-column" aria-labelledby="team-heading">
         <section class="recipe-section">
           <h2 id="team-heading">팀 소개</h2>
           <ul>
@@ -61,6 +61,6 @@
         </aside>
       </section>
     </main>
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="partials/footer.html" data-root-path="."></div>
   </body>
 </html>

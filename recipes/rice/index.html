@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>밥 레시피 모음 | 조코의 장-나물-밥</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/includes.js" defer></script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script src="../../assets/js/includes.js" defer></script>
   </head>
-  <body>
-    <div data-include="/partials/header.html"></div>
+  <body data-root-path="../..">
+    <div data-include="../../partials/header.html" data-root-path="../.."></div>
     <main id="main-content">
       <section class="section" aria-labelledby="rice-overview">
         <div>
@@ -22,13 +22,13 @@
           <h2 class="section-title" id="rice-bowls">한 그릇 요리</h2>
           <p class="section-lead">다양한 토핑과 양념으로 완성하는 대표 밥 요리를 소개합니다.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card recipe-card">
-            <h3><a href="/recipes/rice/bibimbap.html">비빔밥</a></h3>
+            <h3><a href="bibimbap.html">비빔밥</a></h3>
             <p>다양한 나물과 고추장 양념이 조화로운 대표 밥 요리.</p>
           </article>
           <article class="card recipe-card">
-            <h3><a href="/recipes/rice/kimchi-fried-rice.html">김치볶음밥</a></h3>
+            <h3><a href="kimchi-fried-rice.html">김치볶음밥</a></h3>
             <p>김치와 밥, 간단한 재료로 완성하는 빠른 한 끼.</p>
           </article>
         </div>
@@ -39,6 +39,6 @@
         <p>잡곡이나 퀴노아를 섞어 영양을 더하고, 고추장 양념에는 비건 고추장이나 코코넛 아미노스를 활용해 할랄 식단으로 즐겨보세요.</p>
       </aside>
     </main>
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="../../partials/footer.html" data-root-path="../.."></div>
   </body>
 </html>

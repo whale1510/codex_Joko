@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>조코의 한식 레시피 가이드</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/includes.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/includes.js" defer></script>
   </head>
-  <body>
-    <div data-include="/partials/header.html"></div>
+  <body data-root-path=".">
+    <div data-include="partials/header.html" data-root-path="."></div>
     <main id="main-content">
       <section class="hero" aria-labelledby="hero-heading">
         <h1 id="hero-heading">한식의 기본, 장·나물·밥을 한 곳에서</h1>
@@ -17,8 +17,8 @@
           만나보세요. 비건과 할랄 식단을 위한 대체재 가이드까지 준비되어 있어 누구나 부담 없이 한식을 즐길 수 있습니다.
         </p>
         <div class="button-group">
-          <a class="button primary" href="/recipes/index.html">전체 레시피 보기</a>
-          <a class="button secondary" href="/guides/vegan-halal.html">비건·할랄 가이드</a>
+          <a class="button primary" href="recipes/index.html">전체 레시피 보기</a>
+          <a class="button secondary" href="guides/vegan-halal.html">비건·할랄 가이드</a>
         </div>
       </section>
 
@@ -76,24 +76,24 @@
           <h2 class="section-title" id="categories-heading">카테고리별 대표 레시피</h2>
           <p class="section-lead">장, 나물, 밥 카테고리를 오가며 새로운 메뉴를 발견하세요.</p>
         </div>
-        <div class="grid cards-3">
+        <div class="category-grid">
           <article class="card" aria-labelledby="card-jang">
             <span class="category-tag">장 (Jang)</span>
             <h3 id="card-jang">발효 장으로 깊은 맛을</h3>
             <p>된장, 고추장, 간장 등 발효 장을 활용한 국과 조합 요리를 만나보세요.</p>
-            <a href="/recipes/jang/index.html">장 레시피 모아보기 →</a>
+            <a href="recipes/jang/index.html">장 레시피 모아보기 →</a>
           </article>
           <article class="card" aria-labelledby="card-namul">
             <span class="category-tag">나물 (Namul)</span>
             <h3 id="card-namul">땅과 계절의 향을 담은 반찬</h3>
             <p>향긋한 나물무침과 건강한 곁들이 요리를 선보입니다.</p>
-            <a href="/recipes/namul/index.html">나물 레시피 모아보기 →</a>
+            <a href="recipes/namul/index.html">나물 레시피 모아보기 →</a>
           </article>
           <article class="card" aria-labelledby="card-rice">
             <span class="category-tag">밥 (Rice)</span>
             <h3 id="card-rice">든든한 한 끼 식사를 책임지는 밥상</h3>
             <p>잡곡밥부터 볶음밥까지, 다양하게 즐길 수 있는 밥 레시피를 살펴보세요.</p>
-            <a href="/recipes/rice/index.html">밥 레시피 모아보기 →</a>
+            <a href="recipes/rice/index.html">밥 레시피 모아보기 →</a>
           </article>
         </div>
       </section>
@@ -103,9 +103,9 @@
           <h2 class="section-title" id="featured-heading">추천 레시피</h2>
           <p class="section-lead">계절 재료와 입맛을 고려한 대표 메뉴를 만나보세요.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card recipe-card">
-            <h3><a href="/recipes/jang/doenjang-jjigae.html">된장찌개</a></h3>
+            <h3><a href="recipes/jang/doenjang-jjigae.html">된장찌개</a></h3>
             <p>토속적인 구수함이 살아있는 대표 장 요리.</p>
             <div class="recipe-metadata">
               <span>⏱ 30분</span>
@@ -117,7 +117,7 @@
             </ul>
           </article>
           <article class="card recipe-card">
-            <h3><a href="/recipes/namul/spinach-namul.html">시금치나물</a></h3>
+            <h3><a href="recipes/namul/spinach-namul.html">시금치나물</a></h3>
             <p>간단하지만 깊은 맛을 자랑하는 나물 반찬.</p>
             <div class="recipe-metadata">
               <span>⏱ 10분</span>
@@ -129,7 +129,7 @@
             </ul>
           </article>
           <article class="card recipe-card">
-            <h3><a href="/recipes/rice/bibimbap.html">비빔밥</a></h3>
+            <h3><a href="recipes/rice/bibimbap.html">비빔밥</a></h3>
             <p>다양한 나물과 고소한 고추장 양념이 어우러진 밥 한 그릇.</p>
             <div class="recipe-metadata">
               <span>⏱ 25분</span>
@@ -149,9 +149,9 @@
           된장, 고추장 등 장류는 비건 또는 할랄 인증 제품을 선택하고, 육수는 채수나 표고버섯 우린 물로 대체해보세요. 참기름이 부담스럽다면
           저온압착 들기름이나 향이 부드러운 포도씨유를 활용할 수 있습니다. 더 자세한 대체재 정보는 가이드에서 확인하세요.
         </p>
-        <a class="button tertiary" href="/guides/vegan-halal.html">대체재 가이드 읽기</a>
+        <a class="button tertiary" href="guides/vegan-halal.html">대체재 가이드 읽기</a>
       </aside>
     </main>
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="partials/footer.html" data-root-path="."></div>
   </body>
 </html>

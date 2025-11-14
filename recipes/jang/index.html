@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>장 레시피 모음 | 조코의 장-나물-밥</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/includes.js" defer></script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script src="../../assets/js/includes.js" defer></script>
   </head>
-  <body>
-    <div data-include="/partials/header.html"></div>
+  <body data-root-path="../..">
+    <div data-include="../../partials/header.html" data-root-path="../.."></div>
     <main id="main-content">
       <section class="section" aria-labelledby="jang-overview">
         <div>
@@ -22,9 +22,9 @@
           <h2 class="section-title" id="jang-stews">찌개 &amp; 국물 요리</h2>
           <p class="section-lead">구수한 국물과 감칠맛을 살린 요리를 준비했습니다.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card recipe-card">
-            <h3><a href="/recipes/jang/doenjang-jjigae.html">된장찌개</a></h3>
+            <h3><a href="doenjang-jjigae.html">된장찌개</a></h3>
             <p>된장과 채소, 두부로 끓여내는 구수한 집밥 대표 메뉴.</p>
             <ul>
               <li>기본 육수와 채소 손질법 안내</li>
@@ -39,9 +39,9 @@
           <h2 class="section-title" id="jang-sauces">양념 &amp; 소스</h2>
           <p class="section-lead">상차림을 완성하는 장 요리와 응용법을 만나보세요.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card recipe-card">
-            <h3><a href="/recipes/jang/ssamjang.html">쌈장</a></h3>
+            <h3><a href="ssamjang.html">쌈장</a></h3>
             <p>쌈 채소와 잘 어울리는 달큰하고 고소한 비빔 장.</p>
             <ul>
               <li>집에서도 쉽게 배합 가능한 레시피</li>
@@ -56,6 +56,6 @@
         <p>할랄 간장이나 비건 고추장은 저염 제품을 선택하면 맛 균형을 맞추기 좋습니다. 부족한 감칠맛은 다시마 가루나 표고버섯 가루로 채워보세요.</p>
       </aside>
     </main>
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="../../partials/footer.html" data-root-path="../.."></div>
   </body>
 </html>

@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나물 레시피 모음 | 조코의 장-나물-밥</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/includes.js" defer></script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script src="../../assets/js/includes.js" defer></script>
   </head>
-  <body>
-    <div data-include="/partials/header.html"></div>
+  <body data-root-path="../..">
+    <div data-include="../../partials/header.html" data-root-path="../.."></div>
     <main id="main-content">
       <section class="section" aria-labelledby="namul-overview">
         <div>
@@ -22,13 +22,13 @@
           <h2 class="section-title" id="namul-classic">기본 나물 반찬</h2>
           <p class="section-lead">밥상에 자주 오르는 대표 나물 반찬을 단계별로 배워보세요.</p>
         </div>
-        <div class="recipe-list">
+        <div class="recipe-card-grid">
           <article class="card recipe-card">
-            <h3><a href="/recipes/namul/spinach-namul.html">시금치나물</a></h3>
+            <h3><a href="spinach-namul.html">시금치나물</a></h3>
             <p>데치고 무치는 기본기를 익힐 수 있는 기본 레시피.</p>
           </article>
           <article class="card recipe-card">
-            <h3><a href="/recipes/namul/bean-sprout-namul.html">콩나물무침</a></h3>
+            <h3><a href="bean-sprout-namul.html">콩나물무침</a></h3>
             <p>아삭하고 담백한 식감을 살리는 조리법을 소개합니다.</p>
           </article>
         </div>
@@ -39,6 +39,6 @@
         <p>참기름 대신 들기름이나 볶은 견과류 오일로 향을 더할 수 있습니다. 소금 대신 간장이나 고추장을 활용하면 감칠맛이 살아납니다.</p>
       </aside>
     </main>
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="../../partials/footer.html" data-root-path="../.."></div>
   </body>
 </html>
