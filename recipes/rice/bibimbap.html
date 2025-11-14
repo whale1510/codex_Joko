@@ -10,47 +10,58 @@
   <body>
     <div data-include="/partials/header.html"></div>
     <main id="main-content">
-      <article class="section" aria-labelledby="bibimbap-heading">
-        <header>
-          <span class="category-tag">밥 (Rice)</span>
-          <h1 class="section-title" id="bibimbap-heading">비빔밥</h1>
-          <div class="recipe-metadata">
-            <span>⏱ 준비 15분 + 조리 10분</span>
-            <span>🥄 2인분</span>
-          </div>
-          <p>다양한 나물과 고소한 고추장 양념이 어우러진 대표 한식 밥 요리를 집에서도 쉽게 만들어보세요.</p>
-        </header>
-      </article>
+      <article class="recipe-detail" aria-labelledby="bibimbap-heading">
+        <div class="recipe-detail-grid">
+          <header class="recipe-overview">
+            <span class="category-tag">밥 (Rice)</span>
+            <h1 class="section-title" id="bibimbap-heading">비빔밥</h1>
+            <div class="recipe-metadata">
+              <span>⏱ 준비 15분 + 조리 10분</span>
+              <span>🥄 2인분</span>
+            </div>
+            <p>다양한 나물과 고소한 고추장 양념이 어우러진 대표 한식 밥 요리를 집에서도 쉽게 만들어보세요.</p>
+          </header>
+          <aside class="recipe-visual" aria-label="비빔밥 플레이팅 가이드">
+            <span class="recipe-visual__label">Bowl Composition</span>
+            <p>다채로운 색을 살려 먹음직한 한 그릇을 완성해요.</p>
+            <ul>
+              <li>빨강·초록·노랑 토핑을 골고루 배치해 색 대비를 만듭니다.</li>
+              <li>돌솥이나 넓은 그릇을 사용하면 섞기 편하고 온기가 오래가요.</li>
+              <li>마지막에 참기름과 김가루를 더해 풍미를 마무리합니다.</li>
+            </ul>
+          </aside>
+        </div>
 
-      <section class="layout-two-column section" aria-labelledby="bibimbap-ingredients">
-        <section class="recipe-section">
-          <h2 id="bibimbap-ingredients">재료</h2>
-          <ul>
-            <li>따뜻한 밥 2공기</li>
-            <li>시금치나물, 콩나물무침, 호박볶음, 당근볶음 각 1/2컵</li>
-            <li>고추장 양념 3큰술</li>
-            <li>참기름 1큰술</li>
-            <li>계란 프라이 2개</li>
-          </ul>
+        <section class="recipe-content-grid section" aria-labelledby="bibimbap-ingredients">
+          <section class="recipe-section">
+            <h2 id="bibimbap-ingredients">재료</h2>
+            <ul>
+              <li>따뜻한 밥 2공기</li>
+              <li>시금치나물, 콩나물무침, 호박볶음, 당근볶음 각 1/2컵</li>
+              <li>고추장 양념 3큰술</li>
+              <li>참기름 1큰술</li>
+              <li>계란 프라이 2개</li>
+            </ul>
+          </section>
+          <aside class="aside-panel" aria-labelledby="bibimbap-alt">
+            <h2 id="bibimbap-alt">대체재 팁</h2>
+            <ul>
+              <li>고추장 양념은 비건 고추장과 메이플 시럽, 참기름으로 간단히 만들 수 있습니다.</li>
+              <li>계란 대신 구운 두부나 표고버섯을 토핑하면 비건 식단으로 즐길 수 있어요.</li>
+              <li>잡곡밥이나 콜리플라워 라이스를 사용해 영양을 조절해보세요.</li>
+            </ul>
+          </aside>
         </section>
-        <aside class="aside-panel" aria-labelledby="bibimbap-alt">
-          <h2 id="bibimbap-alt">대체재 팁</h2>
-          <ul>
-            <li>고추장 양념은 비건 고추장과 메이플 시럽, 참기름으로 간단히 만들 수 있습니다.</li>
-            <li>계란 대신 구운 두부나 표고버섯을 토핑하면 비건 식단으로 즐길 수 있어요.</li>
-            <li>잡곡밥이나 콜리플라워 라이스를 사용해 영양을 조절해보세요.</li>
-          </ul>
-        </aside>
-      </section>
 
-      <section class="recipe-section section recipe-steps" aria-labelledby="bibimbap-steps">
-        <h2 id="bibimbap-steps">조리 순서</h2>
-        <ol>
-          <li>나물과 볶음 토핑을 미리 준비해 각각 간을 맞춘다.</li>
-          <li>따뜻한 밥을 그릇에 담고 토핑을 고르게 올린다.</li>
-          <li>고추장 양념을 곁들여 기호에 따라 참기름을 둘러 섞어 먹는다.</li>
-        </ol>
-      </section>
+        <section class="recipe-steps section" aria-labelledby="bibimbap-steps">
+          <h2 id="bibimbap-steps">조리 순서</h2>
+          <ol>
+            <li>나물과 볶음 토핑을 미리 준비해 각각 간을 맞춘다.</li>
+            <li>따뜻한 밥을 그릇에 담고 토핑을 고르게 올린다.</li>
+            <li>고추장 양념을 곁들여 기호에 따라 참기름을 둘러 섞어 먹는다.</li>
+          </ol>
+        </section>
+      </article>
     </main>
     <div data-include="/partials/footer.html"></div>
   </body>

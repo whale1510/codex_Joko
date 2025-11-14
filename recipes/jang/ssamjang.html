@@ -10,50 +10,61 @@
   <body>
     <div data-include="/partials/header.html"></div>
     <main id="main-content">
-      <article class="section" aria-labelledby="ssamjang-heading">
-        <header>
-          <span class="category-tag">장 (Jang)</span>
-          <h1 class="section-title" id="ssamjang-heading">쌈장</h1>
-          <div class="recipe-metadata">
-            <span>⏱ 준비 10분</span>
-            <span>🥄 4인분</span>
-          </div>
-          <p>신선한 쌈 채소와 잘 어울리는 달큰하고 고소한 비빔 장을 빠르게 만들어보세요.</p>
-        </header>
-      </article>
+      <article class="recipe-detail" aria-labelledby="ssamjang-heading">
+        <div class="recipe-detail-grid">
+          <header class="recipe-overview">
+            <span class="category-tag">장 (Jang)</span>
+            <h1 class="section-title" id="ssamjang-heading">쌈장</h1>
+            <div class="recipe-metadata">
+              <span>⏱ 준비 10분</span>
+              <span>🥄 4인분</span>
+            </div>
+            <p>신선한 쌈 채소와 잘 어울리는 달큰하고 고소한 비빔 장을 빠르게 만들어보세요.</p>
+          </header>
+          <aside class="recipe-visual" aria-label="쌈장 플레이팅 제안">
+            <span class="recipe-visual__label">Pairing Ideas</span>
+            <p>쌈장을 다양한 방식으로 활용해 풍성한 상차림을 완성하세요.</p>
+            <ul>
+              <li>상추·깻잎에 곁들여 즉석 쌈을 즐겨요.</li>
+              <li>구운 채소, 두부 스테이크의 소스로 응용합니다.</li>
+              <li>비건 요거트와 섞어 드레싱으로 변주해도 좋아요.</li>
+            </ul>
+          </aside>
+        </div>
 
-      <section class="layout-two-column section" aria-labelledby="ssamjang-ingredients">
-        <section class="recipe-section">
-          <h2 id="ssamjang-ingredients">재료</h2>
-          <ul>
-            <li>된장 2큰술</li>
-            <li>고추장 1큰술</li>
-            <li>간장 1작은술</li>
-            <li>다진 마늘 1작은술</li>
-            <li>다진 파 1큰술</li>
-            <li>참기름 1작은술</li>
-            <li>볶은 깨 1작은술</li>
-          </ul>
+        <section class="recipe-content-grid section" aria-labelledby="ssamjang-ingredients">
+          <section class="recipe-section">
+            <h2 id="ssamjang-ingredients">재료</h2>
+            <ul>
+              <li>된장 2큰술</li>
+              <li>고추장 1큰술</li>
+              <li>간장 1작은술</li>
+              <li>다진 마늘 1작은술</li>
+              <li>다진 파 1큰술</li>
+              <li>참기름 1작은술</li>
+              <li>볶은 깨 1작은술</li>
+            </ul>
+          </section>
+          <aside class="aside-panel" aria-labelledby="ssamjang-substitution">
+            <h2 id="ssamjang-substitution">대체재 팁</h2>
+            <ul>
+              <li>고추장: 비건 인증 제품 또는 할랄 인증 고추장을 선택하세요.</li>
+              <li>간장: 저염 간장이나 타마리 간장으로 대체하면 글루텐 프리로 즐길 수 있습니다.</li>
+              <li>참기름: 들기름 또는 향이 순한 아보카도 오일로 대체 가능합니다.</li>
+            </ul>
+          </aside>
         </section>
-        <aside class="aside-panel" aria-labelledby="ssamjang-substitution">
-          <h2 id="ssamjang-substitution">대체재 팁</h2>
-          <ul>
-            <li>고추장: 비건 인증 제품 또는 할랄 인증 고추장을 선택하세요.</li>
-            <li>간장: 저염 간장이나 타마리 간장으로 대체하면 글루텐 프리로 즐길 수 있습니다.</li>
-            <li>참기름: 들기름 또는 향이 순한 아보카도 오일로 대체 가능합니다.</li>
-          </ul>
-        </aside>
-      </section>
 
-      <section class="recipe-section section recipe-steps" aria-labelledby="ssamjang-steps">
-        <h2 id="ssamjang-steps">조리 순서</h2>
-        <ol>
-          <li>볼에 된장과 고추장을 넣고 고르게 섞는다.</li>
-          <li>간장, 다진 마늘, 다진 파를 더해 부드러운 질감으로 풀어준다.</li>
-          <li>참기름과 볶은 깨를 마지막에 넣고 섞어 향을 더한다.</li>
-          <li>기호에 따라 꿀이나 매실청을 약간 추가해 단맛을 조절한다.</li>
-        </ol>
-      </section>
+        <section class="recipe-steps section" aria-labelledby="ssamjang-steps">
+          <h2 id="ssamjang-steps">조리 순서</h2>
+          <ol>
+            <li>볼에 된장과 고추장을 넣고 고르게 섞는다.</li>
+            <li>간장, 다진 마늘, 다진 파를 더해 부드러운 질감으로 풀어준다.</li>
+            <li>참기름과 볶은 깨를 마지막에 넣고 섞어 향을 더한다.</li>
+            <li>기호에 따라 꿀이나 매실청을 약간 추가해 단맛을 조절한다.</li>
+          </ol>
+        </section>
+      </article>
     </main>
     <div data-include="/partials/footer.html"></div>
   </body>

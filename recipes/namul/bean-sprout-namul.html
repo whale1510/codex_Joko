@@ -10,49 +10,60 @@
   <body>
     <div data-include="/partials/header.html"></div>
     <main id="main-content">
-      <article class="section" aria-labelledby="bean-sprout-heading">
-        <header>
-          <span class="category-tag">나물 (Namul)</span>
-          <h1 class="section-title" id="bean-sprout-heading">콩나물무침</h1>
-          <div class="recipe-metadata">
-            <span>⏱ 준비 10분 + 조리 5분</span>
-            <span>🥄 3인분</span>
-          </div>
-          <p>아삭하고 담백한 콩나물무침은 밥상 어디에나 잘 어울리는 기본 반찬입니다.</p>
-        </header>
-      </article>
+      <article class="recipe-detail" aria-labelledby="bean-sprout-heading">
+        <div class="recipe-detail-grid">
+          <header class="recipe-overview">
+            <span class="category-tag">나물 (Namul)</span>
+            <h1 class="section-title" id="bean-sprout-heading">콩나물무침</h1>
+            <div class="recipe-metadata">
+              <span>⏱ 준비 10분 + 조리 5분</span>
+              <span>🥄 3인분</span>
+            </div>
+            <p>아삭하고 담백한 콩나물무침은 밥상 어디에나 잘 어울리는 기본 반찬입니다.</p>
+          </header>
+          <aside class="recipe-visual" aria-label="콩나물무침 식감 팁">
+            <span class="recipe-visual__label">Texture Tips</span>
+            <p>콩나물의 아삭함을 살리기 위한 포인트를 기억하세요.</p>
+            <ul>
+              <li>데친 뒤 즉시 얼음물에 헹궈 식감을 유지해요.</li>
+              <li>물기를 최대한 제거해 양념이 희석되지 않게 합니다.</li>
+              <li>들깨가루를 더하면 고소함과 점도를 동시에 살릴 수 있어요.</li>
+            </ul>
+          </aside>
+        </div>
 
-      <section class="layout-two-column section" aria-labelledby="bean-sprout-ingredients">
-        <section class="recipe-section">
-          <h2 id="bean-sprout-ingredients">재료</h2>
-          <ul>
-            <li>콩나물 300g</li>
-            <li>다진 마늘 1작은술</li>
-            <li>다진 파 1큰술</li>
-            <li>참기름 1작은술</li>
-            <li>볶은 깨 1작은술</li>
-            <li>소금, 후추 약간</li>
-          </ul>
+        <section class="recipe-content-grid section" aria-labelledby="bean-sprout-ingredients">
+          <section class="recipe-section">
+            <h2 id="bean-sprout-ingredients">재료</h2>
+            <ul>
+              <li>콩나물 300g</li>
+              <li>다진 마늘 1작은술</li>
+              <li>다진 파 1큰술</li>
+              <li>참기름 1작은술</li>
+              <li>볶은 깨 1작은술</li>
+              <li>소금, 후추 약간</li>
+            </ul>
+          </section>
+          <aside class="aside-panel" aria-labelledby="bean-sprout-alt">
+            <h2 id="bean-sprout-alt">대체재 팁</h2>
+            <ul>
+              <li>참기름 대신 들기름이나 볶은 참깨 오일을 사용하면 견과 향이 살아납니다.</li>
+              <li>소금 대신 간장을 조금 넣으면 감칠맛이 더해집니다.</li>
+              <li>청양고추 대신 파프리카나 할라피뇨를 얇게 썰어 넣어도 좋습니다.</li>
+            </ul>
+          </aside>
         </section>
-        <aside class="aside-panel" aria-labelledby="bean-sprout-alt">
-          <h2 id="bean-sprout-alt">대체재 팁</h2>
-          <ul>
-            <li>참기름 대신 들기름이나 볶은 참깨 오일을 사용하면 견과 향이 살아납니다.</li>
-            <li>소금 대신 간장을 조금 넣으면 감칠맛이 더해집니다.</li>
-            <li>청양고추 대신 파프리카나 할라피뇨를 얇게 썰어 넣어도 좋습니다.</li>
-          </ul>
-        </aside>
-      </section>
 
-      <section class="recipe-section section recipe-steps" aria-labelledby="bean-sprout-steps">
-        <h2 id="bean-sprout-steps">조리 순서</h2>
-        <ol>
-          <li>콩나물을 깨끗이 씻고 끓는 물에 2분간 데친 뒤 찬물에 헹군다.</li>
-          <li>체에 밭쳐 물기를 빼고, 손으로 살짝 눌러 남은 물을 제거한다.</li>
-          <li>볼에 콩나물과 다진 마늘, 다진 파, 소금, 후추를 넣고 가볍게 버무린다.</li>
-          <li>참기름과 볶은 깨를 더해 고루 섞은 뒤 접시에 담는다.</li>
-        </ol>
-      </section>
+        <section class="recipe-steps section" aria-labelledby="bean-sprout-steps">
+          <h2 id="bean-sprout-steps">조리 순서</h2>
+          <ol>
+            <li>콩나물을 깨끗이 씻고 끓는 물에 2분간 데친 뒤 찬물에 헹군다.</li>
+            <li>체에 밭쳐 물기를 빼고, 손으로 살짝 눌러 남은 물을 제거한다.</li>
+            <li>볼에 콩나물과 다진 마늘, 다진 파, 소금, 후추를 넣고 가볍게 버무린다.</li>
+            <li>참기름과 볶은 깨를 더해 고루 섞은 뒤 접시에 담는다.</li>
+          </ol>
+        </section>
+      </article>
     </main>
     <div data-include="/partials/footer.html"></div>
   </body>

@@ -10,49 +10,60 @@
   <body>
     <div data-include="/partials/header.html"></div>
     <main id="main-content">
-      <article class="section" aria-labelledby="spinach-heading">
-        <header>
-          <span class="category-tag">나물 (Namul)</span>
-          <h1 class="section-title" id="spinach-heading">시금치나물</h1>
-          <div class="recipe-metadata">
-            <span>⏱ 준비 5분 + 조리 5분</span>
-            <span>🥄 2인분</span>
-          </div>
-          <p>부드럽고 향긋한 시금치나물은 비빔밥, 백반, 도시락 등 어디에나 잘 어울립니다.</p>
-        </header>
-      </article>
+      <article class="recipe-detail" aria-labelledby="spinach-heading">
+        <div class="recipe-detail-grid">
+          <header class="recipe-overview">
+            <span class="category-tag">나물 (Namul)</span>
+            <h1 class="section-title" id="spinach-heading">시금치나물</h1>
+            <div class="recipe-metadata">
+              <span>⏱ 준비 5분 + 조리 5분</span>
+              <span>🥄 2인분</span>
+            </div>
+            <p>부드럽고 향긋한 시금치나물은 비빔밥, 백반, 도시락 등 어디에나 잘 어울립니다.</p>
+          </header>
+          <aside class="recipe-visual" aria-label="시금치나물 플레이팅 제안">
+            <span class="recipe-visual__label">Fresh Serve</span>
+            <p>신선한 색감을 살려 상큼한 반찬을 완성하세요.</p>
+            <ul>
+              <li>흰 접시에 담아 초록빛 대비를 강조해요.</li>
+              <li>레몬 제스트나 유자청을 살짝 더해 향을 살립니다.</li>
+              <li>참깨 대신 볶은 아몬드 슬라이스로 식감을 바꿔보세요.</li>
+            </ul>
+          </aside>
+        </div>
 
-      <section class="layout-two-column section" aria-labelledby="spinach-ingredients">
-        <section class="recipe-section">
-          <h2 id="spinach-ingredients">재료</h2>
-          <ul>
-            <li>시금치 200g</li>
-            <li>참기름 1작은술</li>
-            <li>간장 1작은술</li>
-            <li>다진 마늘 1/2작은술</li>
-            <li>볶은 깨 1작은술</li>
-            <li>소금 약간</li>
-          </ul>
+        <section class="recipe-content-grid section" aria-labelledby="spinach-ingredients">
+          <section class="recipe-section">
+            <h2 id="spinach-ingredients">재료</h2>
+            <ul>
+              <li>시금치 200g</li>
+              <li>참기름 1작은술</li>
+              <li>간장 1작은술</li>
+              <li>다진 마늘 1/2작은술</li>
+              <li>볶은 깨 1작은술</li>
+              <li>소금 약간</li>
+            </ul>
+          </section>
+          <aside class="aside-panel" aria-labelledby="spinach-alt">
+            <h2 id="spinach-alt">대체재 팁</h2>
+            <ul>
+              <li>간장은 타마리 간장이나 저염 간장으로 바꿀 수 있습니다.</li>
+              <li>참기름 대신 들기름 또는 향이 부드러운 포도씨유를 사용하세요.</li>
+              <li>다진 마늘 대신 생강즙을 더하면 산뜻한 맛을 낼 수 있습니다.</li>
+            </ul>
+          </aside>
         </section>
-        <aside class="aside-panel" aria-labelledby="spinach-alt">
-          <h2 id="spinach-alt">대체재 팁</h2>
-          <ul>
-            <li>간장은 타마리 간장이나 저염 간장으로 바꿀 수 있습니다.</li>
-            <li>참기름 대신 들기름 또는 향이 부드러운 포도씨유를 사용하세요.</li>
-            <li>다진 마늘 대신 생강즙을 더하면 산뜻한 맛을 낼 수 있습니다.</li>
-          </ul>
-        </aside>
-      </section>
 
-      <section class="recipe-section section recipe-steps" aria-labelledby="spinach-steps">
-        <h2 id="spinach-steps">조리 순서</h2>
-        <ol>
-          <li>끓는 물에 소금을 약간 넣고 시금치를 30초간 데친다.</li>
-          <li>찬물에 헹군 뒤 물기를 꼭 짜고 먹기 좋은 길이로 썬다.</li>
-          <li>볼에 시금치와 간장, 다진 마늘을 넣고 가볍게 무친다.</li>
-          <li>참기름과 볶은 깨를 더해 향을 살리고 그릇에 담는다.</li>
-        </ol>
-      </section>
+        <section class="recipe-steps section" aria-labelledby="spinach-steps">
+          <h2 id="spinach-steps">조리 순서</h2>
+          <ol>
+            <li>끓는 물에 소금을 약간 넣고 시금치를 30초간 데친다.</li>
+            <li>찬물에 헹군 뒤 물기를 꼭 짜고 먹기 좋은 길이로 썬다.</li>
+            <li>볼에 시금치와 간장, 다진 마늘을 넣고 가볍게 무친다.</li>
+            <li>참기름과 볶은 깨를 더해 향을 살리고 그릇에 담는다.</li>
+          </ol>
+        </section>
+      </article>
     </main>
     <div data-include="/partials/footer.html"></div>
   </body>

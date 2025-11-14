@@ -10,49 +10,60 @@
   <body>
     <div data-include="/partials/header.html"></div>
     <main id="main-content">
-      <article class="section" aria-labelledby="kimchi-heading">
-        <header>
-          <span class="category-tag">밥 (Rice)</span>
-          <h1 class="section-title" id="kimchi-heading">김치볶음밥</h1>
-          <div class="recipe-metadata">
-            <span>⏱ 준비 5분 + 조리 10분</span>
-            <span>🥄 2인분</span>
-          </div>
-          <p>칼칼한 김치와 밥, 간단한 재료로 완성하는 빠르고 든든한 한 끼입니다.</p>
-        </header>
-      </article>
+      <article class="recipe-detail" aria-labelledby="kimchi-heading">
+        <div class="recipe-detail-grid">
+          <header class="recipe-overview">
+            <span class="category-tag">밥 (Rice)</span>
+            <h1 class="section-title" id="kimchi-heading">김치볶음밥</h1>
+            <div class="recipe-metadata">
+              <span>⏱ 준비 5분 + 조리 10분</span>
+              <span>🥄 2인분</span>
+            </div>
+            <p>칼칼한 김치와 밥, 간단한 재료로 완성하는 빠르고 든든한 한 끼입니다.</p>
+          </header>
+          <aside class="recipe-visual" aria-label="김치볶음밥 스타일링">
+            <span class="recipe-visual__label">Flavor Boost</span>
+            <p>볶음밥의 풍미를 끌어올리는 마무리 아이디어입니다.</p>
+            <ul>
+              <li>팬 가장자리에 김치를 눌러 구워주면 불맛이 살아나요.</li>
+              <li>김가루나 잘게 썬 파를 듬뿍 올려 색감을 살립니다.</li>
+              <li>비건 버터나 참기름 한 방울로 고소함을 더하세요.</li>
+            </ul>
+          </aside>
+        </div>
 
-      <section class="layout-two-column section" aria-labelledby="kimchi-ingredients">
-        <section class="recipe-section">
-          <h2 id="kimchi-ingredients">재료</h2>
-          <ul>
-            <li>잘 익은 김치 1컵</li>
-            <li>찬밥 2공기</li>
-            <li>양파 1/2개, 대파 1/2대</li>
-            <li>고추장 1큰술, 간장 1작은술</li>
-            <li>식용유 1큰술</li>
-            <li>계란 프라이 2개 (선택)</li>
-          </ul>
+        <section class="recipe-content-grid section" aria-labelledby="kimchi-ingredients">
+          <section class="recipe-section">
+            <h2 id="kimchi-ingredients">재료</h2>
+            <ul>
+              <li>잘 익은 김치 1컵</li>
+              <li>찬밥 2공기</li>
+              <li>양파 1/2개, 대파 1/2대</li>
+              <li>고추장 1큰술, 간장 1작은술</li>
+              <li>식용유 1큰술</li>
+              <li>계란 프라이 2개 (선택)</li>
+            </ul>
+          </section>
+          <aside class="aside-panel" aria-labelledby="kimchi-alt">
+            <h2 id="kimchi-alt">대체재 팁</h2>
+            <ul>
+              <li>고추장 대신 고추장 양념을 사용하거나, 매운맛을 줄이고 싶다면 토마토 페이스트를 약간 섞어보세요.</li>
+              <li>햄이나 참치를 넣지 않고 두부나 병아리콩을 더하면 비건 식단으로도 충분한 단백질을 섭취할 수 있습니다.</li>
+              <li>계란 대신 구운 버섯이나 아보카도를 토핑하면 색다른 풍미를 즐길 수 있습니다.</li>
+            </ul>
+          </aside>
         </section>
-        <aside class="aside-panel" aria-labelledby="kimchi-alt">
-          <h2 id="kimchi-alt">대체재 팁</h2>
-          <ul>
-            <li>고추장 대신 고추장 양념을 사용하거나, 매운맛을 줄이고 싶다면 토마토 페이스트를 약간 섞어보세요.</li>
-            <li>햄이나 참치를 넣지 않고 두부나 병아리콩을 더하면 비건 식단으로도 충분한 단백질을 섭취할 수 있습니다.</li>
-            <li>계란 대신 구운 버섯이나 아보카도를 토핑하면 색다른 풍미를 즐길 수 있습니다.</li>
-          </ul>
-        </aside>
-      </section>
 
-      <section class="recipe-section section recipe-steps" aria-labelledby="kimchi-steps">
-        <h2 id="kimchi-steps">조리 순서</h2>
-        <ol>
-          <li>김치는 잘게 썰고 양파와 대파도 다진다.</li>
-          <li>팬에 식용유를 두르고 김치와 양파를 볶아 향을 낸다.</li>
-          <li>밥을 넣고 고루 섞은 뒤 고추장과 간장으로 간을 맞춘다.</li>
-          <li>마지막에 대파를 넣고 불을 끈 후 그릇에 담아 계란 프라이 또는 대체 토핑을 올린다.</li>
-        </ol>
-      </section>
+        <section class="recipe-steps section" aria-labelledby="kimchi-steps">
+          <h2 id="kimchi-steps">조리 순서</h2>
+          <ol>
+            <li>김치는 잘게 썰고 양파와 대파도 다진다.</li>
+            <li>팬에 식용유를 두르고 김치와 양파를 볶아 향을 낸다.</li>
+            <li>밥을 넣고 고루 섞은 뒤 고추장과 간장으로 간을 맞춘다.</li>
+            <li>마지막에 대파를 넣고 불을 끈 후 그릇에 담아 계란 프라이 또는 대체 토핑을 올린다.</li>
+          </ol>
+        </section>
+      </article>
     </main>
     <div data-include="/partials/footer.html"></div>
   </body>
